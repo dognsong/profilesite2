@@ -1,0 +1,341 @@
+@font-face{
+    font-family:"NanumBarunCothic";
+    src:url("/font/NanumBarunGothic.ttf"), url("/font/NanumBarunGothic.eot"), url("/font/NanumBarunGothic.woff")
+}
+@font-face{
+    font-family:"NanumBarunCothicB";
+    src:url("/font/NanumBarunGothicBold.ttf"), url("/font/NanumBarunGothicBold.eot"), url("/font/NanumBarunGothicBold.woff")
+}
+.hidden{
+    width:1px; height:1px; font-size:0px; line-height:0px; position:absolute; z-index:99999;
+}
+
+/* header 영역 시작 */ 
+div#header_wrap{
+    width:100%; height:70px; float:left; background:#0054bf;
+}
+header{
+    width:95%; height:100%; margin:0px auto; position:relative; left:0px; top:0px; 
+}
+h1#logo{
+    width:195px; font:normal 32px "NanumBarunCothicB"; position:absolute; left:0px; bottom:0px;
+}
+h1#logo a{
+    color:#fff; text-decoration:none;
+}
+nav#menu{
+    width:320px; height:210px; position:fixed; right:0px; top:0px; z-index:999; 
+}
+h2#menu_icon{
+    width:32px; height:32px; position:absolute; right:38px; top:34px; cursor:pointer; z-index:9999;
+    -webkit-transition:0.4s ease;
+    -moz-transition:0.4s ease;
+    -ms-transition:0.4s ease;
+    -o-transition:0.4s ease;
+}
+nav#menu h2.selected{
+    -webkit-transform:rotate(135deg); 
+    -moz-transform:rotate(135deg); 
+    -ms-transform:rotate(135deg); 
+    -o-transform:rotate(135deg); 
+}
+h2#menu_icon img{
+    width:100%; display:block;   
+}
+ul#menu_list{
+    width:100%; height:100%; padding-top:46px; position:absolute; left:0px; top:-300px; background:#0054bf; opacity:0;
+}
+ul#menu_list li{
+    width:100%; margin-bottom:20px; font:normal 16px "NanumBarunCothicB"; text-align:center; 
+}
+ul#menu_list li a{
+    color:#fff; text-decoration:none;
+}
+ul#menu_list li a:hover{
+    color:#f6ce01;
+}
+/* header 영역 끝 */
+/* visual 영역 시작 */
+div#visual_wrap{
+    width:100%; height:830px; float:left; background:#0054bf; position:relative; left:0px; top:0px;
+}
+p#visual_title{
+    width:100%; height:80px; font:normal 4.688em "NanumBarunCothicB"; color:#fff; text-align:center;
+    position:absolute; left:0px; top:50%; margin-top:-170px;
+}
+p#visual_text{
+    width:100%; height:100px; font:normal 2.5em/65px "NanumBarunCothic"; color:#fff; text-align:center;
+    position:absolute; left:0px; top:50%; margin-top:-60px;
+}
+p#visual_text span{
+    color:#f6ce01; font:bold 1.125em "NanumBarunCothic";
+}
+/* visual 영역 끝 */
+/* contents 영역 시작 */
+section#con_wrap{
+    width:100%; height:6900px; float:left; background:#0054bf; border-top:solid 4px #fff; 
+}
+h2.con_title{
+    width:250px; height:24px; font:normal 1.5em "NanumBarunCothicB"; color:#fff; text-align:center; 
+    background:#0054bf; margin:0px auto; position:relative; left:0px; top:-15px;
+}
+
+ul#skill_list{
+    width:96%; height:550px; padding-top:180px; margin:0px auto;
+}
+ul#skill_list li{
+    width:32%; height:100%; margin-right:2%; float:left; border:solid 4px #fff; box-sizing:border-box;
+    position:relative; left:0px; top:200px; opacity:0;
+}
+ul#skill_list li:last-child{
+    margin-right:0px;
+}
+p.skill_title{
+    font:normal 1.75em "NanumBarunCothicB"; color:#fff; text-align:center; margin-top:80px; 
+}
+p.skill_text{
+    width:80%; margin:80px auto; font:normal 1em/30px "NanumBarunCothic"; color:#cae1ff; text-align:center; 
+}
+p.skill_text span{
+    color:#f6ce01; 
+}
+ul#portfolio_list{
+    width:100%; padding-top:200px; padding-bottom:100px; float:left; overflow:hidden;
+}
+ul#portfolio_list li{
+    width:100%; height:810px; float:left; padding-bottom:200px; position:relative; left:100px; top:0px;
+}
+ul#portfolio_list li:nth-child(2n){
+    left:-100px;
+}
+ul#portfolio_list li:last-child{
+    padding-bottom:0px;
+}
+ul#portfolio_list li:nth-child(2n) div.portfolio_img{
+    float:right; margin-right:15%; margin-left:0px;
+}
+ul#portfolio_list li:nth-child(2n) div.portfolio_tbox{
+    float:right; margin:110px 5% 0px 0px; text-align:right;
+}
+
+div.portfolio_img{
+    width:35%; float:left; margin-left:15%; position:relative; left:0px; top:0px;
+}
+div.portfolio_img img{
+    width:100%; display:block;
+}
+div.portfolio_tbox{
+    width:45%; height:430px; margin:110px 0px 0px 5%; float:left; position:relative; left:0px; top:0px; overflow:hidden; 
+}
+p.portfolio_title{
+    width:100%; height:110px; font:normal 1.75em/45px "NanumBarunCothicB"; color:#fff;
+}
+p.portfolio_title span{
+    color:#f6ce01; 
+}
+p.portfolio_line{
+    width:300%; height:3px; background:#fff;
+}
+p.portfolio_keyword{
+    font:normal 1em "NanumBarunCothic"; color:#fff; margin-top:15px; 
+}
+p.portfolio_text{
+    width:76%; font:normal 1em/27px "NanumBarunCothic"; color:#cae1ff; margin-top:30px; text-align:justify;
+}
+ul#portfolio_list li:nth-child(2n) p.portfolio_text{
+    text-align:right; position:absolute; right:0px; 
+}
+p.visitsite_btn{
+    width:60px; margin-top:50px; 
+}
+ul#portfolio_list li:nth-child(2n) p.visitsite_btn{
+    position:absolute; right:0px; bottom:80px;
+}
+p.visitsite_btn img{
+    width:100%; display:block;
+}
+
+div.gray_layer{
+    width:100%; height:100%; position:absolute; left:0px; top:0px; background:rgba(0,0,0,0.8); opacity:0;
+}
+div.gray_layer a{
+    width:100%; height:100%; display:block;
+}
+p.over_num{
+    height:160px; font:bold 10em "NanumBarunCothicB"; color:rgb(133, 128, 128); position:absolute; left:40px; top:50%; margin-top:-80px;
+}
+p.over_text{
+    height:40px; font:bold 2.563em "NanumBarunCothicB"; color:#fff; position:absolute; left:80px; top:50%; margin-top:-20px;
+}
+/* contents 영역 끝 */
+/* quickmenu 시작 */
+div#quick_top_menu{
+    width:30px; height:55px; position:fixed; right:40px; bottom:-70px; opacity:0; cursor:pointer;
+}
+div#quick_top_menu img{
+    width:100%; height:100%; display:block;
+}
+/* quickmenu 끝 */
+/* footer 영역 시작 */
+div#footer_wrap{
+    width:100%; height:200px; background:#0054bf; border-top:solid 4px #fff; clear:both;
+}
+ul#footer_list{
+    width:84%; margin:80px auto; 
+}
+ul#footer_list li{
+    width:33.33%; float:left; 
+}
+ul#footer_list li p{
+    font:normal 1.125em "NanumBarunCothic"; text-align:center;
+}
+ul#footer_list li p a{
+    color:#fff; text-decoration:none; 
+}
+/* footer 영역 끝 */
+
+/* about 시작 */
+section#about_wrap{
+    width:100%; height:2250px; background:#0054bf; padding-top:250px; position:relative; left:0px; top:0px; float:left;
+}
+h2.sub_con_title{
+    width:100%; height:100px; font:normal 5em "NanumBarunCothicB"; color:#fff; text-align:center; 
+}
+div#about_img{
+    width:100%; height:1020px; background:url("/images/about_img.jpg") no-repeat center; background-size:cover; 
+    margin-top:160px; 
+}
+ul#about_list{
+    width:1400px; padding-top:170px; margin:0px auto;
+}
+ul#about_list li{
+    width:100%; padding-bottom:120px;
+}
+p.about_title{ 
+    width:100%; font:normal 2em "NanumBarunCothic"; color:#fff; margin-bottom:50px; text-align:center;
+}
+p.about_title span{
+    color:#f6ce01; 
+}
+p.about_text{
+    width:70%; margin:0px auto; font:normal 1.125em/30px "NanumBarunCothic"; color:#cae1ff; text-align:center;
+}
+div.back_btn{
+    width:64px; position:absolute; left:50%; margin-left:-32px; bottom:100px; 
+}
+div.back_btn img{
+    width:100%; display:block;
+}
+/* about 끝 */
+
+/* contact 시작 */
+section#contact_wrap{
+    width:100%; height:650px; background:#0054bf; float:left; padding-top:250px; position:relative; left:0px; top:0px;
+}
+p.sub_con_text{
+    width:90%; margin:50px auto; font:normal 2em/42px "NanumBarunCothic"; color:#fff; text-align:center;
+}
+ul#contact_list{
+    width:550px; height:70px; margin:120px auto; 
+}
+ul#contact_list li{
+    width:70px; height:70px; margin-right:90px; float:left; 
+}
+ul#contact_list li:last-child{
+    margin-right:0px; 
+}
+ul#contact_list li img{
+    width:100%; display:block;
+}
+/* contact 끝 */
+
+/* web accesivility 영역 시작 */
+section#accesivility_wrap{
+    width:100%; height:2700px; background:#0054bf; float:left; position:relative; left:0px; top:0px; padding-top:250px;
+}
+ul#accesivility_list{
+    width:1400px; margin:0px auto; padding-top:350px; 
+}
+ul#accesivility_list li{
+    width:100%; height:510px; margin-bottom:180px;  
+}
+p.accesivility_text{
+    width:36%; margin:100px 6% 0px 10%; font:normal 1em/24px "NanumBarunCothic"; color:#cae1ff; text-align:justify; float:left; 
+}
+ul#accesivility_list li:nth-child(2n) p.accesivility_text{
+    float:right; margin:100px 10% 0px 6%;
+}
+p.accesivility_mainmenu{
+    width:48%; height:510px; background:url("/images/web_accesivility_mainmenu.jpg") no-repeat center top; float:left; background-size:cover; 
+}
+p.accesivility_skipmenu{
+    width:48%; height:450px; background:url("/images/web_accesivility_skipmenu.jpg") no-repeat center; float:right; background-size:cover;
+}
+p.accesivility_markup{
+    width:48%; height:410px; background:url("/images/web_accesivility_markup.jpg") no-repeat center; float:left; background-size:cover;
+}
+/* web accesivility 영역 끝 */
+
+/* responsive web 영역 시작 */
+section#responsive_wrap{
+    width:100%; height:3700px; background:#0054bf; float:left; position:relative; left:0px; top:0px; padding-top:250px;
+}
+div#responsive_inner{
+    width:1400px; margin:0px auto; padding-top:350px;
+}
+div#responsive_pc_wrap{
+    width:100%; height:700px; float:left; position:relative; left:0px; top:0px; 
+}
+div#responsive_pc{
+    width:90%; height:630px; margin:0px auto; overflow:auto;
+}
+div#responsive_pc img{
+    width:100%; display:block;
+}
+p.responsive_text{
+    width:100%; height:20px; font:normal 1.313em "NanumBarunCothic"; color:#cae1ff; text-align:center; padding-top:50px; 
+    position:absolute; left:0px; bottom:0px;
+}
+div#responsive_tablet_wrap{
+    width:100%; height:900px; float:left; position:relative; left:0px; top:0px; padding-top:250px; 
+}
+div#responsive_tablet{
+    width:38%; position:absolute; left:50%; margin-left:-19%; bottom:70px; z-index:10;
+}
+div#responsive_tablet img{
+    width:100%; display:block;
+}
+div#responsive_980{
+    width:46%; position:absolute; left:0px; bottom:70px; 
+}
+div#responsive_980 img{
+    width:100%; display:block;
+}
+div#responsive_800{
+    width:32%; position:absolute; right:0px; bottom:70px; 
+}
+div#responsive_800 img{
+    width:100%; display:block;
+}
+div#responsive_mobile_wrap{
+    width:100%; height:700px; float:left; position:relative; left:0px; top:0px; padding-top:250px;
+}
+div#responsive_mobile{
+    width:20%; position:absolute; left:50%; margin-left:-10%; bottom:70px; z-index:10;
+}
+div#responsive_mobile img{
+    width:100%; display:block;
+}
+div#responsive_480{
+    width:50%; position:absolute; left:0px; bottom:70px; 
+}
+div#responsive_480 img{
+    width:100%; display:block;
+}
+div#responsive_380{
+    width:43%; position:absolute; right:0px; bottom:70px; 
+}
+div#responsive_380 img{
+    width:100%; display:block;
+}
+/* responsive web 영역 끝 */ 
